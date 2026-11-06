@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn With Donewhy1 helps beginners learn coding, build their first app, create logos and prepare to publish their projects.">
+  <meta name="theme-color" content="#101827">
+  <title>Learn With Donewhy1 | Learn, Build, Launch</title>
+  <style>
+    :root{--bg:#0b1220;--panel:#121e31;--panel2:#17263d;--text:#f4f7fb;--muted:#b6c3d4;--brand:#42d6a4;--blue:#65a8ff;--line:#2a3a52}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;background:#0b1220ed;border-bottom:1px solid var(--line);z-index:10;backdrop-filter:blur(10px)}
+    nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+    .mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--brand),var(--blue));display:grid;place-items:center;color:#071321;font-weight:900;font-size:17px}
+    .links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:var(--muted)}.links a:hover{color:var(--brand)}
+    .btn{display:inline-block;padding:12px 19px;border-radius:10px;background:var(--brand);color:#071321;font-weight:800;border:0}
+    .btn.secondary{background:transparent;color:var(--text);border:1px solid var(--line)}
+    .hero{padding:86px 0 70px;background:radial-gradient(ellipse at 80% 10%,#1a4560 0,transparent 42%)}
+    .eyebrow{color:var(--brand);font-weight:800;letter-spacing:1.5px;text-transform:uppercase;font-size:12px}
+    h1{font-size:clamp(38px,7vw,68px);line-height:1.08;margin:15px 0;max-width:800px}
+    h2{font-size:clamp(27px,4vw,38px);line-height:1.2;margin:0 0 14px}
+    p{color:var(--muted)}.hero p{font-size:18px;max-width:680px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    section{padding:68px 0}.section-intro{max-width:720px;margin-bottom:28px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:23px}
+    .card h3{margin:8px 0}.icon{font-size:25px}
+    .steps{counter-reset:step}.step{position:relative;padding-left:58px;margin:18px 0}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:12px;background:var(--panel2);display:grid;place-items:center;color:var(--brand);font-weight:900}
+    .highlight{background:linear-gradient(135deg,#123d42,#172d49);border:1px solid #2d6861;border-radius:18px;padding:28px}
+    .price{font-size:36px;font-weight:900;color:var(--brand)}.small{font-size:13px;color:var(--muted)}
+    .faq details{padding:17px 0;border-bottom:1px solid var(--line)}summary{cursor:pointer;font-weight:700}
+    footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+    .notice{background:#332a17;border:1px solid #685326;padding:14px;border-radius:12px;color:#ffe8b0;font-size:14px}
+    @media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.links{display:none}}
+    @media(max-width:540px){.grid{grid-template-columns:1fr}.hero{padding:60px 0}.btn{width:100%;text-align:center}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#home"><span class="mark">LW</span><span>Learn With Donewhy1</span></a>
+    <div class="links">
+      <a href="#courses">Courses</a><a href="#services">Services</a><a href="#about">About</a><a href="#steps">How it works</a><a href="#contact">Contact</a>
+    </div>
+    <a class="btn" href="https://wa.me/2348165436340?text=Hello%20Learn%20With%20Donewhy1%2C%20I%20want%20to%20make%20an%20enquiry.">Contact us</a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Technology education for beginners</div>
+      <h1>Learn Coding.<br>Build Your First App.</h1>
+      <p>We help beginners understand coding, turn ideas into websites and apps, create simple brand logos, and prepare their projects for launch.</p>
+      <div class="actions">
+        <a class="btn" href="https://wa.me/2348165436340?text=Hello%2C%20I%20want%20to%20join%20Learn%20With%20Donewhy1.">Get started</a>
+        <a class="btn secondary" href="#courses">Explore what we teach</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="wrap">
+      <div class="section-intro"><div class="eyebrow">What you can learn</div><h2>Start from the basics</h2><p>Lessons are designed for beginners. We explain concepts step by step and help learners practise by building small projects.</p></div>
+      <div class="grid">
+        <article class="card"><div class="icon">🌐</div><h3>HTML & CSS</h3><p>Learn how webpages are structured and styled. Build your first responsive website.</p></article>
+        <article class="card"><div class="icon">⚙️</div><h3>JavaScript</h3><p>Understand programming basics and make webpages interactive.</p></article>
+        <article class="card"><div class="icon">📱</div><h3>App Development</h3><p>Learn the stages of planning and building a simple app from an idea.</p></article>
+        <article class="card"><div class="icon">🤖</div><h3>AI-assisted Coding</h3><p>Learn how to use AI responsibly to understand code, find errors and practise.</p></article>
+        <article class="card"><div class="icon">🚀</div><h3>Publishing Basics</h3><p>Understand testing, hosting, app-store requirements and launch preparation.</p></article>
+        <article class="card"><div class="icon">🎨</div><h3>Logo & Branding</h3><p>Learn basic design principles and create a simple identity for your project.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-intro"><div class="eyebrow">What we can help with</div><h2>From idea to first launch</h2><p>Choose learning support or ask about a project service. The exact work, timeline and price will be agreed before payment.</p></div>
+      <div class="grid">
+        <article class="card"><h3>📚 Coding lessons</h3><p>Beginner-friendly guidance and practical exercises.</p></article>
+        <article class="card"><h3>🛠️ First app support</h3><p>Step-by-step help planning and building your first app.</p></article>
+        <article class="card"><h3>💻 Website creation</h3><p>Simple websites for personal projects and small businesses.</p></article>
+        <article class="card"><h3>🎨 Logo design</h3><p>A clean, simple logo concept for your brand or app.</p></article>
+        <article class="card"><h3>📦 App project service</h3><p>Ask us about building a small app at an affordable agreed price.</p></article>
+        <article class="card"><h3>🌍 Launch guidance</h3><p>Guidance on testing, hosting and publishing requirements.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="steps">
+    <div class="wrap">
+      <div class="section-intro"><div class="eyebrow">How it works</div><h2>Clear steps, no surprises</h2></div>
+      <div class="card">
+        <div class="step"><h3>Send an enquiry</h3><p>Message us on WhatsApp and tell us what you want to learn or build.</p></div>
+        <div class="step"><h3>Discuss your goals</h3><p>We explain the available support, what is included, the timeline and the total price.</p></div>
+        <div class="step"><h3>Review the terms</h3><p>Before paying, you receive the agreed scope, payment details, cancellation and refund terms in writing.</p></div>
+        <div class="step"><h3>Learn and build</h3><p>Work through the agreed lessons or project milestones and ask questions as you progress.</p></div>
+        <div class="step"><h3>Test and prepare to launch</h3><p>We help you review the project and understand the next publishing steps. Store approval is controlled by the relevant platform.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="highlight">
+        <div class="eyebrow">About us</div><h2>Technology should be easier to learn</h2>
+        <p>Learn With Donewhy1 is a beginner-focused learning and digital project-support initiative. Our aim is to make coding easier to understand and help people take their first steps towards building websites and apps.</p>
+        <p>We value clear communication, practical learning, honest pricing and realistic project expectations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="registration">
+    <div class="wrap">
+      <div class="highlight">
+        <div class="eyebrow">Training enquiry</div><h2>Ask about the ₦20,000 training plan</h2>
+        <div class="price">₦20,000</div>
+        <p>This is a proposed registration price, not an automatic payment request. Contact us first to confirm the current programme, exact lessons, support period, what is included, and written refund/cancellation terms. Do not pay until you receive and agree to those details.</p>
+        <a class="btn" href="https://wa.me/2348165436340?text=Hello%2C%20please%20send%20me%20the%20full%20details%20of%20the%20proposed%20N20%2C000%20training%20plan%2C%20including%20what%20is%20included%2C%20duration%20and%20refund%20terms.">Ask about registration</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-intro"><div class="eyebrow">Contact</div><h2>Tell us what you want to create</h2><p>Send a message for course details, project enquiries or logo design.</p></div>
+      <a class="btn" href="https://wa.me/2348165436340?text=Hello%20Learn%20With%20Donewhy1.">WhatsApp: 08165436340</a>
+      <p class="small">WhatsApp contact: +234 816 543 6340</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Learn With Donewhy1. All rights reserved.<br><span class="small">Learning and project support. Services, prices and timelines are confirmed in writing before payment.</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
